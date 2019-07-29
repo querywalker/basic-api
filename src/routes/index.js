@@ -3,7 +3,7 @@ const router = express.Router()
 const absoluteConverterMiddleware = require('../middlewares/absoluteConverterMiddleware')
 
 const sumPost = require('./sum/post.js')
-const sumSchema = require('./sum/schema')
+const sumSchema = require('./sum/schema.js')
 
 router.route('/sum').post(sumSchema, absoluteConverterMiddleware, sumPost)
 
